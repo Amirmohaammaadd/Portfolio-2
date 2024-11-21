@@ -14,11 +14,7 @@ const Navbar = () => {
   return (
     <nav className="mb-20 flex items-center justify-between py-6 overflow-x-hidden">
       <div className="flex flex-shrink-0 mb-1 items-center">
-        {/* <img
-          src={logo}
-          alt="None"
-          className="mx-2 w-10 text-slate-800 dark:text-slate-200"
-        /> */}
+       
         <HiOutlineComputerDesktop
           size={30}
           className="mx-2 w-10 text-slate-800 dark:text-slate-200 cursor-pointer "

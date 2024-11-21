@@ -1,5 +1,6 @@
 import { HERO_CONTENT } from "../constants";
-import profile from "../assets/kevinRushProfile.png";
+// import profile from "../assets/kevinRushProfile.png";
+import profile from "../assets/amir.jpg";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -45,6 +46,7 @@ const Hero = () => {
         <div className="w-full lg:w-1/2 lg:p-8 mb-2">
           <div className="flex justify-center">
             <motion.img
+            className="rounded-lg shadow-lg drop-shadow-xl brightness-75"
               src={profile}
               alt="Profile"
               initial={{ x: 100, opacity: 0 }}

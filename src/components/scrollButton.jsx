@@ -13,13 +13,6 @@ const ScrollButton = () => {
     }
   };
 
-//   const scrollToTop = () => {
-//     window.scrollTo({
-//       top: 0,
-//       behavior: "smooth",
-//     });
-//   };
-
   useEffect(() => {
     window.addEventListener("scroll", toggleVisible);
   }, []);
@@ -27,13 +20,11 @@ const ScrollButton = () => {
   return (
     <>
       <div
-        className={`fixed bottom-5 right-7 p-3 bg-slate-900 rounded-full ${
-          visible ? "inline" : "opacity-0"
+        className={`fixed bottom-5 right-7 p-3 bg-slate-900 hover:bg-slate-700 rounded-full cursor-pointer ${
+          visible ? "flex" : "opacity-0"
         } `}
         onClick={() => {
-            toggleVisible()
-          window.scrollTo({top: 0, behavior: 'smooth'});
-   
+          window.scrollTo({ top: 0, behavior: "smooth" });
         }}
       >
         <IoIosArrowUp size={20} className="text-cyan-500" />

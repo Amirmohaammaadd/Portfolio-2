@@ -7,7 +7,7 @@ const About = () => {
     <div className="border-b border-neutral-900 pb-4">
       <h2 className="my-20 text-center text-4xl text-slate-800 dark:text-slate-200">
         About
-        <span className=" text-slate-800  dark:text-neutral-500">Me</span>
+        <span className=" text-slate-800  dark:text-neutral-500"> Me</span>
       </h2>
 
       <div className="flex flex-wrap">
