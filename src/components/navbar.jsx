@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="m-8 flex items-center justify-center gap-8 text-2xl">
+      <div className="m-8 items-center justify-center gap-8 text-2xl hidden md:flex">
         <FaGithub className="text-slate-800 hover:scale-110 transition duration-100 dark:text-slate-200 dark:hover:text-cyan-500" />
         <FaInstagram className="text-slate-800 hover:scale-110 transition duration-100 dark:text-slate-200 dark:hover:text-cyan-500" />
         <FaSquareXTwitter className="text-slate-800 hover:scale-110 transition duration-100 dark:text-slate-200 dark:hover:text-cyan-500" />
