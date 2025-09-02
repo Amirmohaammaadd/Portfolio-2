@@ -1,3 +1,4 @@
+import { Image } from "antd";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 
@@ -14,20 +15,30 @@ const Projects = () => {
       </motion.h2>
       <div>
         {PROJECTS.map((projects, index) => (
-          <div className="mb-8 flex flex-wrap lg:justify-center" key={index}>
+          <div
+            className="mb-8 flex gap-10 flex-wrap lg:justify-center"
+            key={index}
+          >
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1 }}
               className="w-full lg:w-1/4"
             >
-              <img
+              {/* <img
                 src={projects.image}
                 alt="None"
-                className="mb-6 rounded"
+                className="mb-6 rounded size-full"
                 width={150}
                 height={150}
+              /> */}
+
+              <Image
+                height={200}
+                src={projects.image}
+                className="mb-6 rounded size-full h-full"
               />
+
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
@@ -35,8 +46,12 @@ const Projects = () => {
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <h6 className="mb-2 font-semibold text-slate-900 dark:text-slate-300">{projects.title}</h6>
-              <p className="mb-4 text-slate-900 dark:text-neutral-400">{projects.description}</p>
+              <h6 className="mb-2 font-semibold text-slate-900 dark:text-slate-300">
+                {projects.title}
+              </h6>
+              <p className="mb-4 text-slate-900 dark:text-neutral-400">
+                {projects.description}
+              </p>
               {projects.technologies.map((tech, index) => (
                 <span
                   key={index}
