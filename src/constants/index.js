@@ -52,13 +52,6 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Sepahtan",
-    image: project6,
-    description:
-      "A project-based company focused on delivering fleet management solutions for public transportation systems, leveraging real-time data processing technologies to enhanc operational efficiency and monitoring capabilities",
-    technologies: ["Antd", "tailwind", "React", "Next.js"],
-  },
-  {
     title: "myevtsp.com",
     image: project1,
     description:
@@ -70,6 +63,13 @@ export const PROJECTS = [
     image: project2,
     description:
       "Created the main panel for a taxpayer website using React and Ant Design, featuring a dashboard for tracking tax filings, payment history, and notifications. Integrated interactive charts and filters for data visualization and streamlined user access to essential tools and resources.",
+    technologies: ["Antd", "tailwind", "React", "Next.js"],
+  },
+  {
+    title: "Sepahtan",
+    image: project6,
+    description:
+      "A project-based company focused on delivering fleet management solutions for public transportation systems, leveraging real-time data processing technologies to enhanc operational efficiency and monitoring capabilities",
     technologies: ["Antd", "tailwind", "React", "Next.js"],
   },
   {
