@@ -37,6 +37,7 @@ const Projects = () => {
                 height={200}
                 src={projects.image}
                 className="mb-6 rounded size-full h-full"
+                // preview={{mask:"مشاهده"}}
               />
 
             </motion.div>
