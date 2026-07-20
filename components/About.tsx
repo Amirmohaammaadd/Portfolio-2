@@ -24,7 +24,9 @@ const About = () => {
             <Image
               src={aboutImg}
               alt="About-Img"
-              className="rounded-2xl"
+              className="w-full h-auto rounded-2xl"
+              height={400}
+              width={500}
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
           </motion.div>

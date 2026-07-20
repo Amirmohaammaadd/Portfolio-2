@@ -11,7 +11,7 @@ const container = (delay: number): Variants => ({
 const Hero = () => {
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
-      <div className="flex flex-wrap justify-center items-center gap-20">
+      <div className="flex flex-wrap justify-evenly items-center">
         <div className="flex flex-col items-center lg:items-star">
           <motion.h1
             className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl text-black dark:text-slate-200"
@@ -47,12 +47,12 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
         >
           <Image
-            className="rounded-lg shadow-lg drop-shadow-xl brightness-75"
+            className="w-full h-auto max-w-[400px] rounded-lg shadow-lg drop-shadow-xl brightness-75"
             src={profile}
             alt="Profile"
             width={400}
             height={500}
-            sizes="400px"
+            sizes="(max-width: 400px) 100vw, 400px"
             priority
           />
         </motion.div>
