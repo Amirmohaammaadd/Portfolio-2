@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 import { HERO_CONTENT } from "@/constants";
