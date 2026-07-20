@@ -1,0 +1,16 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "portfolio-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "C:\\Users\\amirmohamad.abdolahi\\Desktop\\Portfolio-2",
+        "run",
+        "dev"
+      ],
+      "port": 3000
+    }
+  ]
+}
