@@ -21,7 +21,12 @@ const About = () => {
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1 }}
           >
-            <Image src={aboutImg} alt="About-Img" className="rounded-2xl" />
+            <Image
+              src={aboutImg}
+              alt="About-Img"
+              className="rounded-2xl"
+              sizes="(min-width: 1024px) 50vw, 100vw"
+            />
           </motion.div>
         </div>
 

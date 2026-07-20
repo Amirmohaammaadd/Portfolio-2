@@ -36,6 +36,7 @@ const Projects = () => {
                 alt={project.title}
                 onClick={() => setSelected(index)}
                 className="mb-6 h-[200px] w-auto cursor-zoom-in rounded object-fill"
+                sizes="(min-width: 1024px) 25vw, 100vw"
               />
             </motion.div>
             <motion.div

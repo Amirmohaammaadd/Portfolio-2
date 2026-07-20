@@ -3,9 +3,9 @@
 import { useContext } from "react";
 import dynamic from "next/dynamic";
 import { ThemeContext } from "@/context/ThemeContext";
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
 
-const Navbar = dynamic(() => import("@/components/Navbar"));
-const Hero = dynamic(() => import("@/components/Hero"));
 const About = dynamic(() => import("@/components/About"));
 const Technologies = dynamic(() => import("@/components/Technologies"));
 const Experience = dynamic(() => import("@/components/Experience"));
