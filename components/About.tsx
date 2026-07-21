@@ -18,13 +18,14 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 1 }}
+          className="relative w-full max-w-md aspect-[4/3]"
         >
           <Image
             src={aboutImg}
             alt="About-Img"
-            className="w-full h-auto rounded-2xl"
-            height={300}
-            width={400}
+            fill
+            className="rounded-2xl object-cover"
+            sizes="(min-width: 768px) 400px, 100vw"
           />
         </motion.div>
 

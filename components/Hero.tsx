@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 import { HERO_CONTENT } from "@/constants";
@@ -45,13 +47,14 @@ const Hero = () => {
           initial={{ x: 100 }}
           animate={{ x: 0 }}
           transition={{ duration: 0.6 }}
+          className="relative w-full max-w-[400px] aspect-[4/5]"
         >
           <Image
-            className="w-full h-auto max-w-[400px] rounded-lg shadow-lg drop-shadow-xl brightness-75"
+            loading="eager"
+            className="rounded-lg object-cover shadow-lg drop-shadow-xl brightness-75"
             src={profile}
             alt="Profile"
-            width={400}
-            height={500}
+            fill
             sizes="(max-width: 400px) 100vw, 400px"
             priority
           />
